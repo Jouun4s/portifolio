@@ -1,0 +1,131 @@
+.services-section {
+  background: linear-gradient(135deg, #1f1f1f, #313131);
+  padding: 4rem 1rem;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.services-header {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.services-header h2 {
+  font-size: 2rem;
+  color: white;
+}
+
+.services-header span {
+  color: #ff6600;
+}
+
+.services-header p {
+  max-width: 500px;
+  color: #ccc;
+  margin-top: 0.5rem;
+}
+
+.services-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Carrossel horizontal */
+.services-carousel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+}
+
+.services-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+.services-carousel::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 10px;
+}
+
+.service-card {
+  flex: 0 0 auto;
+  width: 350px;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  scroll-snap-align: start;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.9rem;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
+.service-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+.service-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}
+
+.service-card button {
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem 0.65rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.service-card button:hover {
+  background: #ff6600;
+}
+
+
+/* Botões do carrossel */
+.carousel-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.carousel-btn {
+  background: #111;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background: #ff6600;
+}

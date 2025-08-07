@@ -1,0 +1,99 @@
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  position: relative;
+}
+
+@font-face {
+    font-family: 'Lufga Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lufga Regular'), url('../src/assets/LufgaFont/LufgaRegular.woff') format('woff');
+    }
+
+.hero-greeting {
+  font-size: 2rem;
+  background: #ebebeb;
+  padding: 0.8rem 2rem;
+  border-radius: 40px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.highlight {
+  color: #f2863c; /* cor laranja da imagem */
+}
+
+.hero-img-wrapper {
+  margin: 2rem auto;
+  background: #f2863c;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-review {
+  font-style: italic;
+  margin-top: 1.5rem;
+}
+
+.hero-experience {
+  margin-top: 1rem;
+  color: #222;
+}
+
+.stars {
+  color: #f2863c;
+  font-size: 1.7rem;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  scale: 1.05;
+ transition: scale 0.4s ease-in-out;
+ 
+}
+.primary {
+  background: #f1843b;
+  color: white;
+}
+
+.secondary {
+  background: #e4e4e4;
+  color: #333;
+}
+.primary:hover {
+  box-shadow: 0 4px 8px #ff7d41;
+}
+.secondary:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
